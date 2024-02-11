@@ -1,0 +1,103 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --dark: rgb(0, 0, 0);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('bgimage.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+
+.container{
+    width: 500px;
+    background: #ad5b24;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.9)
+}
+
+h1{
+    text-align: center;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    color: var(--dark)
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form label{
+    display: block;
+    margin-bottom: 1rem;
+    color: var(--dark)
+}
+
+form input{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--dark)
+}
+
+form button{
+    display: block;
+    width: 100%;
+    height: 40px;
+    color: #f1f1f1;
+    background: var(--dark);
+    margin: 1rem 0;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.resultat-qr{
+    width: 100%;
+    height: 0px;
+    margin: 0 auto;
+    padding: 1rem;
+    transition: height .2s ease-in-out .2s , border .2s ease-in-out .2s,
+}
+
+.resultat-qr.active{
+    display: block;
+    border: 1px solid var(--dark);
+    height: 200px;
+}
+
+.info{
+    color: red;
+    text-align: center;
+    font: italic bold;
+    margin: 1rem 0;
+}
+
+.resultat-qr img{
+    display: block;
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+.ds-copyright{ color: rgba(255,255,255,0.5); letter-spacing: 1px; font-size: 16px; }
+.ds-copyright a{color: rgba(255,255,255,0.5); text-decoration: none; }
+.ds-copyright a:hover{ color: #F26464; }
